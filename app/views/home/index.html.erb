@@ -1,0 +1,13 @@
+<% @posts.each do |post| %>
+  <%= content_tag :div, class: "text-center", style: "padding-top: 5%" do %>
+    <%= image_tag post.image_url %>
+    <%= tag.div post.caption %>
+
+    <%= tag.p do %>
+      <%= post.first_name.titlecase %> - <%= post.email.downcase %>
+    <% end %>
+    <%= button_tag(type: 'button', class: "btn btn-dark") do %>
+      <%= post.button_title.capitalize %>
+    <% end %>
+  <% end %>
+<% end %>
