@@ -1,0 +1,53 @@
+I, [2018-06-06T22:12:45.662405 #5177]  INFO -- : [d640b942-75df-4850-9efd-bb7464cb48cf] Started GET "/" for 127.0.0.1 at 2018-06-06 22:12:45 -0400
+I, [2018-06-06T22:12:45.673350 #5177]  INFO -- : [d640b942-75df-4850-9efd-bb7464cb48cf] Processing by HomeController#index as HTML
+I, [2018-06-06T22:12:45.704298 #5177]  INFO -- : [d640b942-75df-4850-9efd-bb7464cb48cf]   Rendering home/index.html.erb within layouts/application
+I, [2018-06-06T22:12:45.734028 #5177]  INFO -- : [d640b942-75df-4850-9efd-bb7464cb48cf]   Rendered home/index.html.erb within layouts/application (29.4ms)
+I, [2018-06-06T22:12:45.734493 #5177]  INFO -- : [d640b942-75df-4850-9efd-bb7464cb48cf] Completed 401 Unauthorized in 61ms
+F, [2018-06-06T22:12:45.736542 #5177] FATAL -- : [d640b942-75df-4850-9efd-bb7464cb48cf]   
+F, [2018-06-06T22:12:45.736664 #5177] FATAL -- : [d640b942-75df-4850-9efd-bb7464cb48cf] ActionView::Template::Error (FATAL:  role "nursingce_technical" does not exist
+):
+F, [2018-06-06T22:12:45.737000 #5177] FATAL -- : [d640b942-75df-4850-9efd-bb7464cb48cf]     1: <% @posts.each do |post| %>
+[d640b942-75df-4850-9efd-bb7464cb48cf]     2:   <%= content_tag :div, class: "text-center", style: "padding-top: 5%" do %>
+[d640b942-75df-4850-9efd-bb7464cb48cf]     3:     <%= image_tag post.image_url %>
+[d640b942-75df-4850-9efd-bb7464cb48cf]     4:     <%= tag.div post.caption %>
+F, [2018-06-06T22:12:45.737069 #5177] FATAL -- : [d640b942-75df-4850-9efd-bb7464cb48cf]   
+F, [2018-06-06T22:12:45.737136 #5177] FATAL -- : [d640b942-75df-4850-9efd-bb7464cb48cf] app/views/home/index.html.erb:1:in `_app_views_home_index_html_erb___2274255143819983249_70259562885780'
+I, [2018-06-06T22:12:46.019330 #5177]  INFO -- : [7fbbef48-9fb9-4af3-9314-6a44b4e78329] Started GET "/favicon.ico" for 127.0.0.1 at 2018-06-06 22:12:46 -0400
+F, [2018-06-06T22:12:46.020084 #5177] FATAL -- : [7fbbef48-9fb9-4af3-9314-6a44b4e78329]   
+F, [2018-06-06T22:12:46.020140 #5177] FATAL -- : [7fbbef48-9fb9-4af3-9314-6a44b4e78329] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2018-06-06T22:12:46.020176 #5177] FATAL -- : [7fbbef48-9fb9-4af3-9314-6a44b4e78329]   
+F, [2018-06-06T22:12:46.020214 #5177] FATAL -- : [7fbbef48-9fb9-4af3-9314-6a44b4e78329] actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[7fbbef48-9fb9-4af3-9314-6a44b4e78329] actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[7fbbef48-9fb9-4af3-9314-6a44b4e78329] railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+[7fbbef48-9fb9-4af3-9314-6a44b4e78329] railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+[7fbbef48-9fb9-4af3-9314-6a44b4e78329] activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[7fbbef48-9fb9-4af3-9314-6a44b4e78329] activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+[7fbbef48-9fb9-4af3-9314-6a44b4e78329] activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+[7fbbef48-9fb9-4af3-9314-6a44b4e78329] railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+[7fbbef48-9fb9-4af3-9314-6a44b4e78329] actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[7fbbef48-9fb9-4af3-9314-6a44b4e78329] actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[7fbbef48-9fb9-4af3-9314-6a44b4e78329] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[7fbbef48-9fb9-4af3-9314-6a44b4e78329] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[7fbbef48-9fb9-4af3-9314-6a44b4e78329] activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[7fbbef48-9fb9-4af3-9314-6a44b4e78329] actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[7fbbef48-9fb9-4af3-9314-6a44b4e78329] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[7fbbef48-9fb9-4af3-9314-6a44b4e78329] railties (5.1.6) lib/rails/engine.rb:522:in `call'
+[7fbbef48-9fb9-4af3-9314-6a44b4e78329] puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+[7fbbef48-9fb9-4af3-9314-6a44b4e78329] puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+[7fbbef48-9fb9-4af3-9314-6a44b4e78329] puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+[7fbbef48-9fb9-4af3-9314-6a44b4e78329] puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+[7fbbef48-9fb9-4af3-9314-6a44b4e78329] puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-06-06T22:14:09.628895 #5177]  INFO -- : [03f30254-663c-4c02-9899-a3407e78c6ce] Started GET "/" for 127.0.0.1 at 2018-06-06 22:14:09 -0400
+I, [2018-06-06T22:14:09.631581 #5177]  INFO -- : [03f30254-663c-4c02-9899-a3407e78c6ce] Processing by HomeController#index as HTML
+I, [2018-06-06T22:14:09.633084 #5177]  INFO -- : [03f30254-663c-4c02-9899-a3407e78c6ce]   Rendering home/index.html.erb within layouts/application
+I, [2018-06-06T22:14:09.639901 #5177]  INFO -- : [03f30254-663c-4c02-9899-a3407e78c6ce]   Rendered home/index.html.erb within layouts/application (6.7ms)
+I, [2018-06-06T22:14:09.640096 #5177]  INFO -- : [03f30254-663c-4c02-9899-a3407e78c6ce] Completed 401 Unauthorized in 8ms
+F, [2018-06-06T22:14:09.641079 #5177] FATAL -- : [03f30254-663c-4c02-9899-a3407e78c6ce]   
+F, [2018-06-06T22:14:09.641130 #5177] FATAL -- : [03f30254-663c-4c02-9899-a3407e78c6ce] ActionView::Template::Error (FATAL:  role "nursingce_technical" does not exist
+):
+F, [2018-06-06T22:14:09.641240 #5177] FATAL -- : [03f30254-663c-4c02-9899-a3407e78c6ce]     1: <% @posts.each do |post| %>
+[03f30254-663c-4c02-9899-a3407e78c6ce]     2:   <%= content_tag :div, class: "text-center", style: "padding-top: 5%" do %>
+[03f30254-663c-4c02-9899-a3407e78c6ce]     3:     <%= image_tag post.image_url %>
+[03f30254-663c-4c02-9899-a3407e78c6ce]     4:     <%= tag.div post.caption %>
+F, [2018-06-06T22:14:09.641278 #5177] FATAL -- : [03f30254-663c-4c02-9899-a3407e78c6ce]   
+F, [2018-06-06T22:14:09.641315 #5177] FATAL -- : [03f30254-663c-4c02-9899-a3407e78c6ce] app/views/home/index.html.erb:1:in `_app_views_home_index_html_erb___2274255143819983249_70259562885780'
